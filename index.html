@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Victim Support — Free Scam Help, Fraud Reporting & Hacked Account Support</title>
+<meta name="description" content="Scammed online or account hacked? Cyber Victim Support is a free Telegram bot for scam and fraud victims: report an incident, get a case ID, track your case, read free security guides, and get expert help. It never asks for passwords or OTPs.">
+<meta name="keywords" content="scam help, report a scam, fraud report, hacked account help, hacked account recovery, phishing help, crypto scam help, blackmail help, cyber victim support, online fraud help">
+<meta name="robots" content="index, follow">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cyber Victim Support — Free Help for Scam & Fraud Victims">
+<meta property="og:description" content="Report a scam or hacked account in minutes, get a case ID, track your case, and read free security guides. Free initial triage on Telegram. Never asks for passwords or OTPs.">
+<meta property="og:image" content="banner.jpg">
+<meta property="og:url" content="https://t.me/Cyber_Victim_Support_bot">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cyber Victim Support — Free Help for Scam & Fraud Victims">
+<meta name="twitter:description" content="Guided scam/fraud reporting on Telegram with a case ID, status tracking and free security guides. Expert help available.">
+<meta name="twitter:image" content="banner.jpg">
+<style>
+  :root{
+    --deep:#0a2540; --deep2:#0d3b5c; --teal:#0e9594; --teal-bright:#14b8a6;
+    --ink:#12212e; --muted:#4b6070; --bg:#f4f8fa; --card:#ffffff; --line:#dbe7ee;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  a{color:var(--teal);text-decoration:none}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+  header.site{background:var(--deep);color:#fff;padding:14px 0}
+  header.site .wrap{display:flex;align-items:center;gap:10px}
+  .brand{font-weight:700;font-size:1.1rem;color:#fff}
+  .brand small{display:block;font-weight:400;font-size:.78rem;color:#9fc3d8}
+  .shield{width:38px;height:38px;flex:0 0 38px;background:linear-gradient(160deg,var(--teal-bright),var(--deep2));border-radius:10px 10px 16px 16px;display:flex;align-items:center;justify-content:center;font-size:20px}
+  .hero{background:linear-gradient(150deg,var(--deep) 0%,var(--deep2) 55%,var(--teal) 130%);color:#fff;padding:56px 0 48px}
+  .hero h1{font-size:2.2rem;line-height:1.2;margin-bottom:14px}
+  .hero p.lead{font-size:1.12rem;color:#d8ecf5;max-width:640px;margin-bottom:22px}
+  .hero img.banner{width:100%;max-width:760px;border-radius:14px;box-shadow:0 14px 40px rgba(0,0,0,.35);display:block;margin:0 auto 26px}
+  .btn{display:inline-block;padding:14px 26px;border-radius:10px;font-weight:700;font-size:1rem;margin:4px 6px 4px 0}
+  .btn-primary{background:var(--teal-bright);color:#04302f}
+  .btn-primary:hover{background:#2dd4bf}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid #7dd3fc}
+  .trust{margin-top:18px;font-size:.95rem;color:#bfe9df}
+  section{padding:52px 0}
+  h2{font-size:1.65rem;color:var(--deep);margin-bottom:10px}
+  .sub{color:var(--muted);max-width:680px;margin-bottom:28px}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .card .num{width:40px;height:40px;border-radius:50%;background:var(--teal);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .card h3{margin-bottom:6px;color:var(--deep)}
+  .card p{color:var(--muted);font-size:.97rem}
+  table.prices{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  table.prices th,table.prices td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  table.prices th{background:var(--deep);color:#fff}
+  table.prices tr:last-child td{border-bottom:none}
+  .price{font-weight:800;color:var(--teal);white-space:nowrap}
+  .free{color:#0a7d4f;font-weight:800}
+  .cats{color:var(--muted);font-size:.97rem;max-width:760px}
+  .safety{background:var(--deep);color:#e6f4f1;border-radius:18px;padding:34px 30px}
+  .safety h2{color:#fff}
+  .safety p{color:#cfe8e2;max-width:760px}
+  .safety strong{color:#5eead4}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+  .faq summary{font-weight:700;color:var(--deep);cursor:pointer}
+  .faq p{color:var(--muted);margin-top:8px}
+  .contact-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+  .btn-wa{background:#25d366;color:#06330f}
+  .btn-fiverr{background:#1dbf73;color:#04331a}
+  .btn-bot{background:var(--deep2);color:#fff}
+  footer{background:var(--deep);color:#9fc3d8;padding:30px 0;font-size:.9rem}
+  footer a{color:#7dd3fc}
+  @media(max-width:760px){
+    .steps{grid-template-columns:1fr}
+    .hero h1{font-size:1.7rem}
+    section{padding:38px 0}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="shield" aria-hidden="true">🛡️</div>
+    <div class="brand">Cyber Victim Support <small>Free help for victims of online scams, fraud &amp; hacked accounts</small></div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <img class="banner" src="banner.jpg" alt="Cyber Victim Support — scam help, fraud reporting and hacked account support on Telegram">
+    <h1>Scammed online? Account hacked?<br>Take the right first steps — now.</h1>
+    <p class="lead">Cyber Victim Support is a free Telegram bot built by a Cyber Security Specialist. Report an incident in a few guided steps, receive a case ID, track your case status anytime, and read free security guides for the first critical hours.</p>
+    <a class="btn btn-primary" href="https://t.me/Cyber_Victim_Support_bot">Open the Bot — Free Triage →</a>
+    <a class="btn btn-ghost" href="#services">See Services &amp; Prices</a>
+    <p class="trust">🔒 The bot <strong>never</strong> asks for your password, OTP, seed phrase, private key, or full card number.</p>
+  </div>
+</div>
+
+<section id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">No forms, no phone queues. Everything happens inside Telegram, in about two minutes.</p>
+    <div class="steps">
+      <div class="card">
+        <div class="num">1</div>
+        <h3>Report your incident</h3>
+        <p>Choose your situation — hacked account, financial scam, phishing, impersonation, extortion/blackmail, marketplace fraud, crypto or romance/investment scam, malware, harassment, or other — and answer a few guided questions.</p>
+      </div>
+      <div class="card">
+        <div class="num">2</div>
+        <h3>Get your case ID</h3>
+        <p>Your report is filed under a personal case ID (format CYB-2026-NNNNNN). Open <em>My Cases</em> in the bot anytime to see the current status of your case.</p>
+      </div>
+      <div class="card">
+        <div class="num">3</div>
+        <h3>Act on expert guidance</h3>
+        <p>Follow the free Security Guides for your first steps, or let a specialist review your case in depth. Initial Triage is free; deeper help is priced clearly in Telegram Stars.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="background:#fff">
+  <div class="wrap">
+    <h2>Services &amp; prices</h2>
+    <p class="sub">Paid inside Telegram with Stars — no card details are ever requested by the bot.</p>
+    <table class="prices">
+      <tr><th>Service</th><th>What you get</th><th>Price</th></tr>
+      <tr>
+        <td><strong>Initial Triage</strong></td>
+        <td>Guided incident report, case ID, case status tracking, and access to the free Security Guides.</td>
+        <td class="free">FREE</td>
+      </tr>
+      <tr>
+        <td><strong>Incident Review</strong></td>
+        <td>A specialist reviews your case and gives you a prioritized action plan: what to secure, what to report, and in what order.</td>
+        <td class="price">100 Stars</td>
+      </tr>
+      <tr>
+        <td><strong>Detailed Analysis</strong></td>
+        <td>A deeper analysis of your evidence, accounts and timeline, with a full step-by-step recovery and safety plan.</td>
+        <td class="price">200 Stars</td>
+      </tr>
+      <tr>
+        <td><strong>Human Consultation</strong></td>
+        <td>A 1-to-1 consultation with a Cyber Security Specialist who walks you through your case personally.</td>
+        <td class="price">300 Stars</td>
+      </tr>
+    </table>
+    <p class="cats" style="margin-top:18px"><strong>Incident categories covered:</strong> hacked account · financial scam/fraud · phishing · impersonation · extortion/blackmail · marketplace fraud · crypto scam · romance/investment scam · malware · harassment · other.</p>
+  </div>
+</section>
+
+<section id="safety">
+  <div class="wrap">
+    <div class="safety">
+      <h2>🛡️ Our safety promise</h2>
+      <p>Cyber Victim Support will <strong>never</strong> ask for your password, OTP or one-time code, wallet seed phrase, private key, or full bank card number. No legitimate support service needs them.</p>
+      <p style="margin-top:10px">Scammers run "recovery" scams that target victims a second time. If anyone contacts you asking for a password, a code, or an upfront "recovery fee" — in any app — stop. That is not us, and it is not help.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:#fff">
+  <div class="wrap">
+    <h2>Frequently asked questions</h2>
+    <p class="sub">Honest answers — including about what this service cannot do.</p>
+    <div class="faq">
+      <details>
+        <summary>Is the bot really free to use?</summary>
+        <p>Yes. Filing a report, receiving a case ID, tracking your case status, reading the Security Guides, and the Initial Triage are all free. Only the optional expert services (Incident Review, Detailed Analysis, Human Consultation) are paid, in Telegram Stars.</p>
+      </details>
+      <details>
+        <summary>Can you get my money or my account back?</summary>
+        <p>No service can honestly guarantee that. Bank transfers reported immediately are sometimes reversible; crypto transactions almost never are. What Cyber Victim Support provides is a structured report, correct procedures, evidence guidance, and account-security steps — the things that genuinely improve your outcome and protect you from further loss.</p>
+      </details>
+      <details>
+        <summary>What should I do in the first hour after a scam?</summary>
+        <p>Stop contact but keep evidence (screenshots of chats, profiles, links, transaction IDs). Secure your email account first, then banking and social accounts with new passwords and two-factor authentication. Contact your bank through the official app or the number on your card. The bot's free Security Guides walk you through this in order.</p>
+      </details>
+      <details>
+        <summary>Why does the bot never ask for my password or OTP?</summary>
+        <p>Because it doesn't need them — and neither does any legitimate helper. Passwords, one-time codes, seed phrases, and private keys are the exact things scammers ask for. Asking for them is the clearest sign of a "recovery" scam.</p>
+      </details>
+      <details>
+        <summary>Does the bot replace my bank or the police?</summary>
+        <p>No. Always report fraud to your bank and to your local police or cyber crime unit as well. The bot helps you organize your case, keep a trackable record, and follow the right steps — alongside, not instead of, official channels.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Talk to a human</h2>
+    <p class="sub">Prefer to speak with the specialist directly? Use any of these official channels.</p>
+    <div class="contact-btns">
+      <a class="btn btn-bot" href="https://t.me/Cyber_Victim_Support_bot">✈️ Open the Telegram Bot</a>
+      <a class="btn btn-wa" href="https://wa.me/8801779583258">💬 WhatsApp</a>
+      <a class="btn btn-fiverr" href="https://www.fiverr.com/tushar_planet">Fiverr Profile</a>
+      <a class="btn btn-ghost" style="color:var(--deep);border-color:var(--deep2)" href="https://www.upwork.com/freelancers/~0164baea9ab18cd7f7">Upwork Profile</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:#fff">Cyber Victim Support</strong> — a Telegram bot by a Cyber Security Specialist, helping victims of online scams, fraud, and hacked accounts take the right first steps.</p>
+    <p style="margin-top:8px">Bot: <a href="https://t.me/Cyber_Victim_Support_bot">t.me/Cyber_Victim_Support_bot</a> · WhatsApp: <a href="https://wa.me/8801779583258">wa.me/8801779583258</a> · Fiverr: <a href="https://www.fiverr.com/tushar_planet">fiverr.com/tushar_planet</a></p>
+    <p style="margin-top:8px">This service provides guidance and case support. It does not replace your bank, law enforcement, or legal advice, and it cannot guarantee recovery of funds or accounts.</p>
+  </div>
+</footer>
+
+</body>
+</html>
